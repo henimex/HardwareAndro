@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             x:Class="HardwareAndro.Views.Lesson7Pages">
+    <ContentPage.Content>
+        <ListView x:Name="lst_View1" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding name}" Detail="{Binding money}" TextColor="Green" DetailColor="Red"></TextCell>-->
+                    <!--<EntryCell Label="Name" Text="{Binding name}"></EntryCell>-->
+                    <ImageCell Text="{Binding name}" Detail="{Binding money}" ImageSource="{Binding linkImage}"></ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
